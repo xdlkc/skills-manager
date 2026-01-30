@@ -1,0 +1,46 @@
+{
+  "name": "skills-manager",
+  "version": "0.1.0",
+  "description": "Manage AI CLI skills for team collaboration",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "skills-manager": "./bin/skills-manager"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "skills",
+    "claude",
+    "ai",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.1.0",
+    "@vitest/ui": "^3.2.4",
+    "tsup": "^8.5.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.2",
+    "dotenv": "^17.2.3",
+    "inquirer": "^13.2.2",
+    "ora": "^9.1.0",
+    "simple-git": "^3.30.0"
+  }
+}
